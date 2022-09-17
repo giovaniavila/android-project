@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #00261C;
+    --cor2: #044D29;
+    --cor3: #168039;
+    --cor4: #45BF55;
+    --titulo: 'Bebas Neue', cursive;
+}
+
+body{
+    background-color: darkkhaki;
+}
+
+header{
+    background-color: green;
+    text-align: center;
+    height: 154px;
+    color: white;
+    background-image: linear-gradient(to top, #00261C,#044D29);
+}
+
+header > h1{
+    color: white;
+    font-family: var(--titulo);
+    padding-top: 20px;
+    text-shadow: 2px 2px #00000062;
+    font-size: 3em;
+}
+
+header > p{
+    padding-top: 10px;
+    font-size: 1.1em;
+    max-width: 380px;
+    margin: auto;
+}
+
+nav{
+    background-color: #00261C;
+}
+
+nav > a{
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+nav > a:hover{
+    color: white;
+    background-color: #044D29;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+a:hover{
+    color: darkgray;
+    text-decoration: underline;
+    background-color: #14AA4B;
+    transition-duration: 0.5ms;
+}
+
+
+main{
+    display: block;
+    background-color: white;
+    text-align: justify;
+    margin: auto;
+    width: 1035px;
+    height: 1000px;
+}
+
+footer{
+    background-color: #14AA4B ;
+    width: 100%;
+}
