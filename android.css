@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
 
+@font-face{
+    font-family: 'android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +16,8 @@
     --cor3: #168039;
     --cor4: #45BF55;
     --titulo: 'Bebas Neue', cursive;
+
+    --fonte-android: 'android','cursive';
 }
 
 body{
@@ -71,11 +78,46 @@ main{
     background-color: white;
     text-align: justify;
     margin: auto;
-    width: 1035px;
-    height: 1000px;
+    width: 1000px;
+    height: 2000px;
+}
+
+main > h1{
+    font-family: var(--fonte-android);
+    color: #14AA4B;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(to right,#cdffbb, #ffffff);
+    border-radius: 5px;
+    text-indent: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main > h2 {
+    font-family: var(--fonte-android);
+    color: #14AA4B;
+    border-radius: 5px;
+    text-indent: 10px;
+    margin-top: 40px;
+}
+
+main > p{
+    text-align: left;
+    text-align: justify;
+    line-height: 125%;
+    text-indent: 15px;
+    margin-top: 5px;
+}
+
+.img{
+    display: block;
+    width: 100%;
 }
 
 footer{
     background-color: #14AA4B ;
     width: 100%;
+    background-color: black;
+    color: green;
+    text-align: center;
 }
