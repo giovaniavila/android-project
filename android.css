@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
 
-@font-face{
-    font-family: 'android';
-    src: url('/fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&family=Oswald:wght@600&family=Share+Tech+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,12 +13,13 @@
     --cor3: #168039;
     --cor4: #45BF55;
     --titulo: 'Bebas Neue', cursive;
-
-    --fonte-android: 'android','cursive';
+    
+    --fonte-h1: 'Share Tech Mono', monospace;
+    --font-android: 'android','cursive'
 }
 
 body{
-    background-color: darkkhaki;
+    background-color: #d6ddd7;
 }
 
 header{
@@ -49,10 +47,11 @@ header > p{
 
 nav{
     background-color: #00261C;
+    height: 25px;
 }
 
 nav > a{
-    padding: 10px;
+    padding: 5px 15px;
     text-decoration: none;
     font-weight: bolder;
     color: white;
@@ -60,16 +59,9 @@ nav > a{
 
 nav > a:hover{
     color: white;
-    background-color: #044D29;
-    border-radius: 5px;
-    transition-duration: 0.5s;
-}
-
-a:hover{
-    color: darkgray;
     text-decoration: underline;
-    background-color: #14AA4B;
-    transition-duration: 0.5ms;
+    background-color: #044D29;
+    transition-duration: 0.5s;
 }
 
 
@@ -83,30 +75,56 @@ main{
 }
 
 main > h1{
-    font-family: var(--fonte-android);
-    color: #14AA4B;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(to right,#cdffbb, #ffffff);
-    border-radius: 5px;
+    font-size: 35px;
+    font-family: var(--fonte-h1);
+    color: var(--cor2);
     text-indent: 10px;
-    text-align: center;
-    padding-top: 10px;
+    height: 60px;
+    padding-top: 30px;
+    margin-bottom: -18px;
+    text-shadow: 1px 1px #000000f7;
 }
 
-main > h2 {
+
+main > h2{
+    font-size: 30px;
     font-family: var(--fonte-android);
-    color: #14AA4B;
-    border-radius: 5px;
+    background-image: linear-gradient(to right, #c1c1c15c ,white);
+    color: var(--cor2);
     text-indent: 10px;
     margin-top: 40px;
 }
 
-main > p{
-    text-align: left;
+main > p {
+    font-size: 18px;
     text-align: justify;
     line-height: 125%;
-    text-indent: 15px;
-    margin-top: 5px;
+    text-indent: 30px;
+    margin: 15px 35px 0px 15px
+}
+
+main > p > a {
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+main > p > a:visited{
+    color: var(--cor4);
+}
+
+main > p > a:hover{
+    color: #00261C;
+    text-decoration: underline;
+}
+
+main > p > strong{
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+abbr{
+    color: var(--cor4);
+    text-decoration: none;
 }
 
 .img{
