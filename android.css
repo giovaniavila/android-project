@@ -70,7 +70,7 @@ main{
     background-color: white;
     text-align: justify;
     margin: auto;
-    width: 1000px;
+    width: 940px;
     height: 2000px;
 }
 
@@ -97,9 +97,8 @@ main > h2{
 
 main > p {
     font-size: 18px;
-    text-align: justify;
-    line-height: 125%;
-    text-indent: 30px;
+    line-height: 135%;
+    text-indent: 20px;
     margin: 15px 35px 0px 15px
 }
 
@@ -129,7 +128,27 @@ abbr{
 
 .img{
     display: block;
-    width: 100%;
+    margin: auto;
+    width: 90%;
+    padding: 10px 0px;
+} 
+
+.imgdroid{
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+
+main > iframe{
+    display: block;
+    margin: auto;
+    padding: 15px 0px;
+    width: 560px;
+    height: 315px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 
 footer{
