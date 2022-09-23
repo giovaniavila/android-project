@@ -71,7 +71,7 @@ main{
     text-align: justify;
     margin: auto;
     width: 940px;
-    height: 2000px;
+    height: 2289px;
 }
 
 main > h1{
@@ -150,11 +150,49 @@ main > iframe{
     border-bottom-width: 0px;
     border-left-width: 0px;
 }
+aside{
+    background-color: #45BF55;
+    margin: 10px 30px;
+    border-radius: 10px;   
+    box-shadow: 5px 5px 5px #00000045;
+}
 
+aside > h2{
+    background-color: #168039;
+    color: aliceblue;
+    text-indent: 5px;
+    text-shadow: 2px 2px black;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > article{
+    text-indent: 15px;
+    text-align: justify;
+    padding: 15px 0px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    margin-left: 20px;
+    columns: 2;
+}
 footer{
-    background-color: #14AA4B ;
+    background-color: #00261C;
     width: 100%;
-    background-color: black;
-    color: green;
+    height: 30px;
+    color: aliceblue;
     text-align: center;
+    position: absolute;
+    padding: 8px 0px 0px 0px;
+}
+
+footer > a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer > a:hover{
+    color:#45BF55;
+    text-decoration: none;
 }
